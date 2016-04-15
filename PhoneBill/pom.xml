@@ -9,9 +9,47 @@
 
   <url>http://maven.apache.org</url>
 
-  <properties>
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <sonar.language>java</sonar.language>
+ </properties>
+  
+  <build>
+  
+  <resources>
+      <resource>
+        <directory>C:\Users\kim91_000\git\team05_week5\PhoneBill\src\main\java\team05\PhoneBill</directory>
+      </resource>
+      <resource>
+        <directory>C:\Users\kim91_000\git\team05_week5\PhoneBill\src\main\java\team05\PhoneBill</directory>
+      </resource>
+    </resources>
+  
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>org.jacoco</groupId>
+      	<artifactId>jacoco-maven-plugin</artifactId>
+      	<version>0.7.6.201602180812</version>
+      	<executions>
+      		<execution>
+      			<id>default-prepare-agent</id>
+      			<goals>
+      				<goal>prepare-agent</goal>
+      			</goals>
+      		</execution>
+      	</executions>
+      </plugin>
+   </plugins>
+  
+  </build>
+  
 
   <dependencies>
     <dependency>
