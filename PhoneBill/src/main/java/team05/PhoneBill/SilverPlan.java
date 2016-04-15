@@ -1,6 +1,6 @@
 package team05.PhoneBill;
 
-public class SilverPlan implements plan {
+public class SilverPlan implements Plan {
 	private double basicmin = 500;
 	private double excessfarerate = 0.54;
 	private double basicfee = 29.95;

@@ -1,6 +1,6 @@
 package team05.PhoneBill;
 
-public interface plan {
+public interface Plan {
 
 	String toString();
 

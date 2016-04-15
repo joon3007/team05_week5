@@ -1,6 +1,6 @@
 package team05.PhoneBill;
 
-public class GoldPlan implements plan {
+public class GoldPlan implements Plan {
 	private double basicmin = 1000;
 	private double excessfarerate = 0.45;
 	private double basicfee = 49.95;
