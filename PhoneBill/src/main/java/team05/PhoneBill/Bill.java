@@ -14,7 +14,8 @@ public class Bill {
 
 	public void print() {
 		System.out.println("plan : "+ plan+ " subAccount : "+ numsub+ "개 "+" usage : "+ usage);
-		 
+		Calculator calculator = new Calculator(usage, numsub, plan);
+		System.out.println("총 금액 : "+calculator.calculation());
 	}
 	
 

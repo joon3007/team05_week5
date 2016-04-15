@@ -2,6 +2,10 @@ package team05.PhoneBill;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.*;
+
 public class PhoneBIllTest {
 	
 	Calculator cal1 = new Calculator(289, 1, "sliver");

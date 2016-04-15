@@ -9,4 +9,14 @@ public class SilverPlan implements Plan {
 	public String toString(){
 		return "기본기간 : "+basicmin+" 초과요금(분) : "+excessfarerate+" 기본요금 : "+basicfee;
 	}
+
+	public double getBasicMin(){
+		return basicmin;
+	}
+	public double getExcessFareRate(){
+		return excessfarerate;
+	}
+	public double getBasicFee(){
+		return basicfee;
+	}
 }
