@@ -1,5 +1,4 @@
 package team05.PhoneBill;
-import org.junit.Test;
 
 public class User {
 	private String plan;

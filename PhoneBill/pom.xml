@@ -9,9 +9,10 @@
 
   <url>http://maven.apache.org</url>
 
-  <properties>
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <sonar.language>java</sonar.language>
+ </properties>
   
   <build>
   
@@ -20,7 +21,7 @@
         <directory>C:\Users\kim91_000\git\team05_week5\PhoneBill\src\main\java\team05\PhoneBill</directory>
       </resource>
       <resource>
-        <directory>C:\Users\kim91_000\git\team05_week5\PhoneBill\src\test\java\team05\PhoneBill</directory>
+        <directory>C:\Users\kim91_000\git\team05_week5\PhoneBill\src\main\java\team05\PhoneBill</directory>
       </resource>
     </resources>
   
@@ -54,7 +55,8 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.1.0</version>
+      <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
