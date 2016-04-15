@@ -2,7 +2,7 @@ package team05.PhoneBill;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.*;
 
@@ -43,41 +43,51 @@ public class PhoneBIllTest {
 	}
 	@Test
 	public void normalSilver(){
-		assertEquals(29.95,cal1.calculation());
+		double fee = 29.95;
+		assertEquals(fee, cal1.calculation(),fee);
+		System.out.println("normalSilver Pass");
 	}
 	@Test
 	public void normalGold(){
-		assertEquals(49.95, cal2.calculation());
+		double fee = 49.95;
+		assertEquals(fee, cal2.calculation(),fee);
+		System.out.println("normalGold Pass");
 	}
 	@Test
 	public void exceedUsageSilver(){
 		double fee = 29.95+0.54;
-		assertEquals(fee, cal3.calculation());
+		assertEquals(fee, cal3.calculation(),fee);
+		System.out.println("exceedUsageSilver Pass");
 	}
 	@Test
-	public void exccedUsageGold(){
+	public void exceedUsageGold(){
 		double fee = 49.95+0.45;
-		assertEquals(fee, cal4.calculation());
+		assertEquals(fee, cal4.calculation(),fee);
+		System.out.println("exceedUsageGold Pass");
 	}
 	@Test
 	public void manylineSilver(){
 		double fee = 29.95+14.5*3;
-		assertEquals(fee, cal5.calculation());
+		assertEquals(fee, cal5.calculation(),fee);
+		System.out.println("manylineSilver Pass");
 	}
 	@Test
 	public void manylineGold(){
 		double fee = 49.95+21.5*2;
-		assertEquals(fee, cal6.calculation());
+		assertEquals(fee, cal6.calculation(),fee);
+		System.out.println("manylineGold pass");
 	}
 	@Test
 	public void exceedThreeLineSilver(){
 		double fee = 29.95+14.5*3+5;
-		assertEquals(fee, cal7.calculation());
+		assertEquals(fee, cal7.calculation(),fee);
+		System.out.println("exceedTreeLineSilver pass");
 	}
 	@Test
 	public void exceedTreeLineGold(){
 		double fee = 49.95+21.5*3+5*2;
-		assertEquals(fee, cal8.calculation());
+		assertEquals(fee, cal8.calculation(),fee);
+		System.out.println("exceedTreeLineGold pass");
 	}
 
 }
